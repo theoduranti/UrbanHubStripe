@@ -14,9 +14,8 @@
   <% @eles.each do |ele|%> 
     <tr>
       <td><%= ele.firstname %></td>
-      <td><%= ele.passion1 %>, <%= ele.passion2 %></td>
+      <td><%= ele.passion1 %>, <%= ele.passion2 %>, <%= ele.passion3 %>, <%= ele.passion4 %></td>
       <td><%= link_to "Voir son profil", ele_path(ele) %></td>
-
     </tr>
   <% end %>
 
