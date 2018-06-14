@@ -14,6 +14,9 @@
           <% elsif pro_signed_in? %>
             <li><%= current_pro.email %>, vous êtes connecté en tant que professeur</li>
             <%= link_to destroy_pro_session_path, method: :delete do %><span class="glyphicon glyphicon-log-out"></span> Logout<%end%>
+            <li><%= link_to eles_path do %><span class="glyphicon glyphicon-user"></span>Rechercher un élève<%end%></li>
+            <li><%= link_to eles_path do %><span class="glyphicon glyphicon-user"></span>Rechercher un prof<%end%></li>
+            <li><%= link_to new_event_path do %><span class="glyphicon glyphicon-user"></span>Créer un événement<%end%></li>
           <% else %>
           <li><%= link_to new_ele_registration_path do %><span class="glyphicon glyphicon-user"></span> Créer compte élève<%end%></li>
           <li><%= link_to new_pro_registration_path do %><span class="glyphicon glyphicon-user"></span> Créer compte professeur<%end%></li>
